@@ -1,13 +1,94 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+}
+html {
+  background: lightgrey;
+}
+
+body {
+  background: url("https://images.unsplash.com/photo-1522173096622-763cc9d35a3e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80")
+    round;
+
+  user-select: none;
+  -webkit-touch-callout: none;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+input[type="range"] {
+  background: rgba(0, 0, 0, 0);
+  -webkit-appearance: none;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000 inset;
+  background: #2497e3;
+  border-radius: 5px;
+  border: 0px solid #000000;
+}
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 3px 1px #000000;
+  border: 1px solid #2497e3;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #a1d0ff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+
+#root {
+  background: rgba(0, 0, 0, 0);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  #drum-machine {
+    transform: scale(0.8, 0.8);
+  }
+}
+@media only screen and (max-width: 460px) {
+  #drum-machine {
+    transform: scale(0.7, 0.7);
+  }
+}
+@media only screen and (max-width: 400px) {
+  #drum-machine {
+    transform: scale(0.6, 0.6);
+  }
+}
+@media only screen and (max-width: 340px) {
+  #drum-machine {
+    transform: scale(0.5, 0.5);
+  }
+}
+@media only screen and (max-height: 480px) {
+  #drum-machine {
+    transform: scale(0.8, 0.8);
+  }
+}
+
+@media only screen and (max-height: 350px) {
+  #drum-machine {
+    transform: scale(0.7, 0.7);
+  }
 }

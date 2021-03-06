@@ -1,0 +1,25 @@
+#setSelector {
+  position: absolute;
+  grid-column: 2;
+  top: 60px;
+  right: 37px;
+  margin: auto;
+  box-shadow: 2px 1.5px 1.5px black;
+  background: linear-gradient(grey, #333);
+  text-shadow: 1px 1px 1px black;
+  color: white;
+  border: none;
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+  font-family: "VT323", monospace;
+  font-size: 16px;
+}
+#setSelector:active {
+  box-shadow: 2px 1.5px 1.5px black;
+}
+option {
+  background: rgb(77, 184, 255);
+  color: #000;
+  outline: none;
+}

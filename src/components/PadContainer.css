@@ -1,0 +1,10 @@
+#padContainer {
+  grid-row: 2 / span 2;
+  height: 300px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+  text-align: center;
+  grid-gap: 5px;
+  padding-top: 5px;
+}
